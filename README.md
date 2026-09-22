@@ -1,7 +1,5 @@
 # MYu图书管理系统
 
-[![CI](https://github.com/xxy-uu/myu-library/actions/workflows/ci.yml/badge.svg)](https://github.com/xxy-uu/myu-library/actions/workflows/ci.yml)
-
 基于 FastAPI 的图书管理系统 API，大学生课程设计项目。
 
 技术栈：FastAPI + SQLModel + SQLite + JWT
@@ -84,7 +82,6 @@ myu-library/
 │   └── main.py          程序入口
 ├── seed.py              演示数据
 ├── tests/test_api.py    自动化测试
-├── pytest.ini           pytest 配置
-└── .gitignore           忽略规则（数据库文件、虚拟环境等）
+└── 学习笔记.md          详细技术方案与知识点讲解
 ```
 
