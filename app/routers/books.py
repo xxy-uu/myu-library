@@ -21,8 +21,7 @@ def list_books(
     """图书列表：分页 + 关键词 + 分类筛选，公开访问。"""
     stmt = select(Book)
     if keyword:
-        like = f"%{keyword}%"
-        stmt = stmt.where(or_(Book.title.contains(keyword), Book.author.contains(keyword), Book.title.like(like)))
+        stmt = stmt.where(or_(Book.title.contains(keyword), Book.author.contains(keyword)))
     if category:
         stmt = stmt.where(Book.category == category)
 
